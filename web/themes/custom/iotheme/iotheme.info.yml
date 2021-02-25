@@ -1,0 +1,17 @@
+# THEMENAME.info.yml file for Biderbos Eventos by ideas Orange Software
+# Info custom theme file 2021/02/25
+# author: jpfrancesconi
+
+name: iotheme
+type: theme
+description: 'A custom theme created for ideasOrange Software - 1 column approach'
+core_version_requirement: ^8.8 || ^9
+base theme: classy
+package: ideasOrange Software Themes
+
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  footer: 'Footer'
+  footer_bottom: 'Footer Bottom'

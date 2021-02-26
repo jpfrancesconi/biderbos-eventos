@@ -9,6 +9,10 @@ core_version_requirement: ^8.8 || ^9
 base theme: classy
 package: ideasOrange Software Themes
 
+# available to every page presented by the theme
+libraries:
+  - iotheme/global-styling
+
 regions:
   header: 'Header'
   highlighted: 'Highlighted'

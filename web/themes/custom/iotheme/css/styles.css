@@ -1,0 +1,121 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/********************** $VARIABLES **************************/
+/****************** $COLORS *************************/
+/****************** $FONTS *************************/
+/****************** $BUTTONS *************************/
+/****************** $CONSTANTES *************************/
+/*********************** $MIXINS *************************/
+header {
+  background-color: transparent;
+  height: 15vh;
+  min-height: 15vh;
+  position: absolute;
+  width: 100%;
+  z-index: 9; }
+  header.container-medium {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  header .region.region-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; }
+    header .region.region-header #block-iotheme-branding a.site-logo img {
+      width: 100px;
+      height: 100px; }
+    header .region.region-header #block-iotheme-branding .site-name {
+      display: none; }
+    header .region.region-header #block-iotheme-main-menu .menu {
+      display: flex;
+      justify-content: space-between;
+      align-content: center; }
+
+.footer {
+  background-color: #dbd879; }
+
+.highlighted {
+  background-color: #dbd879;
+  height: 100vh; }
+  @media only screen and (min-width: 800px) {
+    .highlighted {
+      background-color: green; } }
+  .highlighted .banner img {
+    object-fit: cover;
+    height: 100vh; }
+  .highlighted #block-highlightedbanner .clearfix.text-formatted.field.field--name-body.field--type-text-with-summary.field--label-hidden.field__item {
+    position: relative; }
+  .highlighted #block-highlightedbanner .banner-text {
+    position: absolute;
+    font-size: 1.5em;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center; }
+
+main {
+  background-color: red; }
+  main.container-full {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }

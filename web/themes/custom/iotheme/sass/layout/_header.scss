@@ -1,0 +1,36 @@
+header {
+    background-color: transparent;
+    height: 15vh;
+    min-height: 15vh;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+
+    &.container-medium {
+        @include container($container-medium);
+    }
+
+    // Brand image and Menu navigation container
+    & .region.region-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        // Brand image
+        & #block-iotheme-branding {
+            & a.site-logo img {
+                width: 100px;
+                height: 100px;
+            }
+            & .site-name {
+                display: none;
+            }
+        }
+        // Menu
+        & #block-iotheme-main-menu .menu {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+    }
+}

@@ -42,3 +42,6 @@ web/sites/default/settings/settings.local.php
 # Ignore SimpleTest multi-site environment.
 # simpletest
 /.vscode/
+
+# Sass files
+web/themes/custom/iotheme/node_modules/
